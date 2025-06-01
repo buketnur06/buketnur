@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong Kong Üniversitesi</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Mevcut stiller korunuyor */
+    body {
+      
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    header { /* ... aynı header kodların ... */ }
+    /* ... diğer stillerin ... */
+    /* Yeni eklenen animasyonlar */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1.5s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ff9900;
+    }
+    .academic-card {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      transition: transform 0.5s;
+    }
+    .academic-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 153, 0, 0.5);
+    }
+    .academic-card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #111;
+      padding: 20px;
+      color: gray;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+}
+body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-container input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .search-container button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            background-color: white;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* Sağ üst köşe giriş yap / kaydol butonları */
+        .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .auth-buttons a {
+            
+            color:white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .auth-buttons a:hover {
+            background-color: #ff9900;
+        }
+        /* Logo */
+        .logo {
+            width: 50px; /* Logo boyutunu ihtiyaca göre ayarlayabilirsiniz */
+            height: auto;
+        }
+        .hero {
+            background: url('campus.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .buttons a {
+            display: inline-block;
+            background: white;
+            color: blue;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+.logo{
+
+width:420px;
+height:120px;
+}
+#academic {
+            
+            padding: 120px;
+            margin: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: left;
+        }
+        #academic h1 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #academic h3 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        #academic ul {
+            list-style: none;
+            padding: 0;
+        }
+        #academic ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        #academic ul li::before {
+            content: "•";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+        #academic ul li ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        #academic ul li ul li {
+            list-style-type: circle;
+            color: #555;
+        }
+        #academic p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+       
+  </style>
+</head>
+<body background="pexels-pixabay-161366.jpg">
+  
+  <header> <!-- Mevcut header aynen korunuyor --> 
+    <!-- Logo, Menü, Arama, Auth butonları -->
+    <!-- ... -->
+ <img src="indir-removebg-preview.png" alt="Hong Kong Üniversitesi Logo" class="logo">
+        
+        <h1><a href="index.html" style="color:white; text-decoration:none;">Hong Kong Üniversitesi Kütüphanesi</a></h1>
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkında</a></li>
+                <li><a href="programlar.html">Programlar</a></li>
+                <li><a href="ogrencii.html">Öğrenci</a></li>
+                <li><a href="akademik.html">Akademik</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Arama yap...">
+            <button>🔍</button>
+        </div>
+
+        <!-- Sağ üst köşe Giriş Yap ve Kaydol butonları -->
+        <div class="auth-buttons">
+            <a href="login.html">Giriş Yap</a>
+            <a href="signup.html">Kaydol</a>
+        </div>
+    </header>
+  </header>
+
+
+  <section id="academic" class="fade-in">
+    <h1>Akademik Bilgiler</h1>
+
+    <h2 class="section-title">Fakülteler ve Bölümler</h2>
+
+    <div class="academic-card fade-in">
+      <img src="resim5" alt="Mühendislik Fakültesi">
+      <h3>Mühendislik Fakültesi</h3>
+      <ul>
+        <li>Bilgisayar Mühendisliği</li>
+        <li>Elektrik-Elektronik Mühendisliği</li>
+        <li>Makine Mühendisliği</li>
+      </ul>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim6" alt="Fen Edebiyat Fakültesi">
+      <h3>Fen-Edebiyat Fakültesi</h3>
+      <ul>
+        <li>Fizik</li>
+        <li>Kimya</li>
+        <li>Biyoloji</li>
+        <li>Tarih</li>
+        <li>Psikoloji</li>
+      </ul>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim7" alt="İşletme Fakültesi">
+      <h3>İşletme Fakültesi</h3>
+      <ul>
+        <li>İşletme Yönetimi</li>
+        <li>Finans ve Muhasebe</li>
+        <li>Pazarlama</li>
+      </ul>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim8" alt="Tıp Fakültesi">
+      <h3>Tıp Fakültesi</h3>
+      <p>Modern teknolojiyle donatılmış laboratuvarlarda eğitim ve araştırma olanakları sunuluyor.</p>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim9" alt="Hukuk Fakültesi">
+      <h3>Hukuk Fakültesi</h3>
+      <p>Uluslararası hukuk, insan hakları ve ticaret hukuku üzerine güçlü bir müfredat sunmaktadır.</p>
+    </div>
+
+    <h2 class="section-title fade-in">Araştırma Merkezleri</h2>
+
+    <div class="academic-card fade-in">
+      <img src="resim10" alt="Yapay Zeka Merkezi">
+      <h3>Yapay Zeka ve Veri Bilimi Araştırma Merkezi</h3>
+      <p>Makine öğrenmesi, büyük veri analizi ve yapay zeka çözümleri üzerinde dünya çapında projeler yürütülmektedir.</p>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim11" alt="Biyoteknoloji Merkezi">
+      <h3>Biyoteknoloji ve Sağlık Bilimleri Enstitüsü</h3>
+      <p>Sağlık bilimlerinde inovatif biyoteknoloji çalışmaları desteklenmektedir.</p>
+    </div>
+
+    <div class="academic-card fade-in">
+      <img src="resim12" alt="Hukuk Merkezi">
+      <h3>Uluslararası Hukuk ve Politika Merkezi</h3>
+      <p>Global hukuk sistemleri ve uluslararası ilişkiler üzerine araştırmalar yapılmaktadır.</p>
+    </div>
+
+    <h2 class="section-title fade-in">Akademik Kadro</h2>
+    <p class="fade-in">Üniversitemizde, alanında uzman 300'den fazla profesör, doçent ve araştırma görevlisi aktif olarak eğitim ve araştırma faaliyetlerine katkıda bulunmaktadır.</p>
+
+  </section>
+<section id="video-gallery" class="fade-in" style="padding: 80px 20px;">
+    <h2 class="section-title">Tanıtım Videoları</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div style="flex: 1; min-width: 300px; max-width: 400px;">
+            <iframe width="100%" height="215" src="videoplayback.mp4" title="Üniversite Tanıtım Videosu" frameborder="0" allowfullscreen></iframe>
+            <p>Üniversite Genel Tanıtımı</p>
+        </div>
+        <div style="flex: 1; min-width: 300px; max-width: 400px;">
+            <iframe width="100%" height="215" src="videoplayback.mp4" title="Araştırma Merkezleri Tanıtımı" frameborder="0" allowfullscreen></iframe>
+            <p>Araştırma ve Laboratuvarlarımız</p>
+        </div>
+        <div style="flex: 1; min-width: 300px; max-width: 400px;">
+            <iframe width="100%" height="215" src="videoplayback.mp4" title="Öğrenci Yaşamı" frameborder="0" allowfullscreen></iframe>
+            <p>Öğrenci Hayatı ve Kampüs</p>
+        </div>
+    </div>
+</section>
+<section id="events" class="fade-in" style="padding: 80px 20px;">
+    <h2 class="section-title">Güncel Etkinlikler</h2>
+    <div style="overflow: hidden; width: 80%; margin: auto;">
+        <div id="event-slider" style="white-space: nowrap; transition: transform 0.5s;">
+            <div style="display: inline-block; width: 100%; text-align: center;">
+                <h3>Yapay Zeka Sempozyumu 2025</h3>
+                <p>25-27 Mayıs 2025 | Ana Konferans Salonu</p>
+            </div>
+            <div style="display: inline-block; width: 100%; text-align: center;">
+                <h3>Uluslararası Hukuk Kongresi</h3>
+                <p>10-12 Haziran 2025 | Hukuk Fakültesi Konferans Salonu</p>
+            </div>
+            <div style="display: inline-block; width: 100%; text-align: center;">
+                <h3>Bilim ve Teknoloji Fuarı</h3>
+                <p>5-7 Temmuz 2025 | Teknoloji Yerleşkesi</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+let currentIndex = 0;
+setInterval(() => {
+    const slider = document.getElementById('event-slider');
+    currentIndex = (currentIndex + 1) % 3;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}, 3000); // Her 3 saniyede bir kaydır
+</script>
+
+
+  <footer>
+    <p>&copy; 2025 Hong Kong Üniversitesi Kütüphanesi. Tüm Hakları Saklıdır.</p>
+  </footer>
+
+</body>
+</html>
