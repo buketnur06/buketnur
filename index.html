@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong Kong Üniversitesi</title>
+
+    <!-- Animate.css ve Wow.js ekleniyor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <style>
+        body {
+            
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-container input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .search-container button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            background-color: white;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li.menu {
+            display: inline-block;
+        }
+        .acilir-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+        }
+        .acilir-menu a {
+            display: block;
+            text-align: left;
+        }
+        .acilir-menu a:hover {
+            color: black;
+        }
+        .menu:hover .acilir-menu {
+            display: block;
+        }
+        .aktif {
+            background-color: white;
+            color: black;
+        }
+        .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .auth-buttons a {
+            color: white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .auth-buttons a:hover {
+            background-color: white;
+            color: black;
+        }
+        .tablink {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            margin-right: 5px;
+        }
+        .tablink:hover {
+            background-color: #555;
+        }
+        .tabcontent {
+            margin-top: 20px;
+        }
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .news-item {
+            background-color: #222;
+            padding: 20px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px white;
+        }
+    </style>
+</head>
+
+<body background="pexels-pixabay-161366.jpg">
+    <header class="wow animate__animated animate__fadeInDown">
+        <img src="indir-removebg-preview.png" alt="Hong Kong Üniversitesi Logo" class="logo">
+        
+        <h1><a href="index.html" style="color:white; text-decoration:none;">Hong Kong Üniversitesi Kütüphanesi</a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="hakkında.html">Hakkında</a></li>
+                <li><a href="programlar.html">Programlar</a></li>
+                <li><a href="ogrencii.html">Öğrenci</a></li>
+                <li><a href="akademik.html">Akademik</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Arama yap...">
+            <button>🔍</button>
+        </div>
+
+        <div class="auth-buttons">
+            <a href="login.html">Giriş Yap</a>
+            <a href="signup.html">Kaydol</a>
+        </div>
+    </header>
+
+    <div class="search-container">
+      <form action="/search">
+        <input type="text" placeholder="Search..." name="q">
+        <button>
+          <img src="buton.jpg" width="18px" height="18px">
+        </button>
+      </form>
+    </div>
+
+    <section class="hero">
+        <h2 class="wow animate__animated animate__fadeInDown">Geleceğinizi Bizimle Şekillendirin</h2>
+        <p class="wow animate__animated animate__fadeInUp">Hong Kong Üniversitesi'nde eğitim fırsatlarını keşfedin.</p>
+
+        <div class="buttons">
+          <marquee scrollamount="15" behavior="alternate" width="90%" style="margin: auto; display: block;">
+            <img src="h.jpg" class="wow animate__animated animate__fadeInLeft" height="300" width="600">
+            <img src="o.jpg" class="wow animate__animated animate__fadeInRight" height="300" width="600">
+            <img src="n.jpg" class="wow animate__animated animate__fadeInUp" height="300" width="600">
+            <img src="k.jpg" class="wow animate__animated animate__fadeInDown" height="300" width="600">
+            <img src="oo.jpg" class="wow animate__animated animate__fadeInLeft" height="300" width="600">
+            <img src="g.jpg" class="wow animate__animated animate__fadeInRight" height="300" width="600">
+          </marquee>
+        </div>
+    </section>
+
+    <h2 class="wow animate__animated animate__fadeInDown">Haberler & Duyurular</h2>
+
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'haberler')">Haberler</button>
+        <button class="tablink" onclick="openTab(event, 'duyurular')">Duyurular</button>
+    </div>
+
+    <div id="haberler" class="tabcontent">
+        <h3 class="wow animate__animated animate__fadeInLeft">Haberler</h3>
+        <div class="news-list">
+            <div class="news-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <h3>Yeni Akademik Yıl Başlıyor</h3>
+                <p><strong>Tarih:</strong> 10 Eylül 2025</p>
+                <p><strong>Açıklama:</strong> 2025-2026 akademik yılı kayıtları başlamıştır. Öğrenciler ders programlarını ve kampüs bilgilerini öğrenebilirler.</p>
+            </div>
+            <div class="news-item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <h3>Üniversitemizden Uluslararası İş Birliği</h3>
+                <p><strong>Tarih:</strong> 5 Temmuz 2025</p>
+                <p><strong>Açıklama:</strong> Hong Kong Üniversitesi, Avrupa'daki 5 üniversite ile yeni bir akademik iş birliği anlaşması imzaladı.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="duyurular" class="tabcontent" style="display:none;">
+        <h3 class="wow animate__animated animate__fadeInLeft">Duyurular</h3>
+        <div class="news-list">
+            <div class="news-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <h3>Kütüphane Çalışma Saatleri Güncellendi</h3>
+                <p><strong>Tarih:</strong> 15 Ağustos 2025</p>
+                <p><strong>Açıklama:</strong> Kütüphanemiz hafta içi 08:00 - 22:00, hafta sonu 09:00 - 20:00 saatleri arasında hizmet verecektir.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+<footer class="wow animate__animated animate__fadeInUp" style="background-color: #111; padding: 40px 0; text-align: center; margin-top: 50px;">
+    <div style="margin-bottom: 20px;">
+        <h3 style="margin: 0; font-size: 24px;">Hong Kong Üniversitesi Kütüphanesi</h3>
+        <p style="margin: 5px 0;">Eğitimde Mükemmellik</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <a href="https://facebook.com" target="_blank" style="margin: 0 10px;">
+            <img src="facebook-new.png" width="30" height="30" alt="Facebook">
+        </a>
+        <a href="https://instagram.com" target="_blank" style="margin: 0 10px;">
+            <img src="instagram-social-media-logo-icons-instagram-icon-free-png.webp" width="30" height="30" alt="Instagram">
+        </a>
+        <a href="https://linkedin.com" target="_blank" style="margin: 0 10px;">
+            <img src="linkedin" width="30" height="30" alt="LinkedIn">
+        </a>
+    </div>
+    <div style="font-size: 14px; color: #aaa;">
+        &copy; 2025 Hong Kong Üniversitesi. Tüm hakları saklıdır.
+    </div>
+</footer>
+
+</body>
+</html>
